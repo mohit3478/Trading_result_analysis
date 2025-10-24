@@ -2,16 +2,6 @@
 
 This project analyzes a set of trading results using Python, Pandas, and Matplotlib. The analysis is performed in the `Trading Results Analysis.ipynb` Jupyter Notebook to calculate key performance metrics and visualize trading performance.
 
-## 📊 Key Visualizations
-
-The primary goal is to visualize the trading account's performance. The notebook generates several plots, including:
-
-* **Equity Curve:** A chart showing the growth of the trading account over time.
-* **Profit/Loss (P&L) Distribution:** A histogram showing the frequency of different profit and loss amounts.
-* **[Add other plots here]:** (e.g., Drawdown chart, P&L by day of week, etc.)
-
-*(**Your action:** Run your notebook, take screenshots of your charts, and add them to the `img` folder. Then, link one here like this:)*
-`![Equity Curve](img/equity_curve.png)`
 
 ## 🚀 Key Performance Metrics
 
