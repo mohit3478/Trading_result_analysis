@@ -1,76 +1,31 @@
-# Trading Result Analysis
+# Trading Result Analysis Dashboard
 
-This project provides a Python-based analysis of trading results from a CSV file. The goal is to calculate key performance metrics and visualize the trading performance to identify strengths, weaknesses, and overall profitability.
+This project is a Power BI dashboard designed to analyze and visualize personal trading performance. It helps in identifying patterns, strengths, and weaknesses in trading strategies by tracking key performance indicators.
 
-## 📈 Dashboard / Key Visualizations
+## 📊 Dashboard Preview
 
-*(Note: It is highly recommended to add a screenshot of your most important chart here, like an equity curve or a profit/loss chart. Name the image file `equity_curve.png` or something similar and upload it to your repository.)*
+![Trading Dashboard Preview](dashboard-preview.png)
 
-![Equity Curve](equity_curve.png)
+## 🚀 Key Metrics & Features
 
-## 🚀 Key Performance Metrics Analyzed
+The dashboard provides insights into several key trading metrics, including:
 
-This analysis calculates several key trading performance indicators, including:
+* **Overall Profit & Loss (P&L):** Tracks the total financial gain or loss over the analyzed period.
+* **Win Rate:** Calculates the percentage of profitable trades out of the total trades taken.
+* **Performance by Day:** Analyzes which days of the week are most or least profitable.
+* **Trade Count:** Summarizes the total number of long and short trades executed.
+* **Average Win vs. Average Loss:** Compares the average size of winning trades to losing trades.
 
-* **Total Profit/Loss (P&L):** The net outcome of all trades.
-* **Win Rate:** The percentage of trades that were profitable.
-* **Profit Factor:** The gross profit divided by the gross loss. A value greater than 1 indicates a profitable system.
-* **Average Win & Average Loss:** The average amount gained on winning trades versus the amount lost on losing trades.
-* **Max Drawdown:** The largest peak-to-trough decline in the trading account's equity.
-* **Sharpe Ratio:** (Optional) A measure of risk-adjusted return.
+## 💾 Data Source
 
-## 🛠️ Technology Stack
+The analysis is based on the `all_trades.csv` file, which contains a record of all individual trades. Each row represents a single trade with columns for entry/exit points, profit, and other relevant details.
 
-* **Language:** Python
-* **Libraries:**
-    * **Pandas:** For data manipulation and analysis.
-    * **NumPy:** For numerical operations.
-    * **Matplotlib / Seaborn:** For data visualization.
-    * **Jupyter Notebook:** (if applicable) For interactive analysis and presentation.
+## 🛠️ Tools Used
 
-## ⚙️ How to Use This Project
+* **Power BI Desktop:** Used for data modeling, creating DAX measures, and building the interactive report and visuals.
 
-### Prerequisites
+## ⚙️ How to Use
 
-* Python 3.x installed.
-* Jupyter Notebook (if you used a `.ipynb` file).
-
-### Installation & Setup
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/mohit3478/Trading_result_analysis.git](https://github.com/mohit3478/Trading_result_analysis.git)
-    cd Trading_result_analysis
-    ```
-
-2.  **Create a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-    ```
-
-3.  **Install the required libraries:**
-    *(Important: Create a `requirements.txt` file in your project by running this command in your terminal: `pip freeze > requirements.txt`. Then upload that file to GitHub.)*
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-### Data Format
-
-The analysis script expects a `.csv` file with your trading data. The file should contain columns similar to the following:
-
-* `entry_date`
-* `exit_date`
-* `ticker`
-* `direction` (e.g., 'LONG' or 'SHORT')
-* `entry_price`
-* `exit_price`
-* `quantity`
-
-*(Please update the list above to match the exact columns in your data file!)*
-
-### Running the Analysis
-
-1.  Place your trading data file (e.g., `my_trades.csv`) in the root directory.
-2.  Update the script/notebook to read from your file name.
-3.  Run the Jupyter Notebook or Python script to see the analysis and generate the visualizations.
+1.  Download the `Trading_result_analysis.pbix` file from this repository.
+2.  Ensure you have [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) installed on your machine.
+3.  Open the `.pbix` file to view and interact with the full dashboard. The data is included within the file.
